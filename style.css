@@ -19,7 +19,7 @@ body {
     background-color: #60B7C2;
     margin: 0 auto;
     overflow: hidden;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .heading--primary {
@@ -38,7 +38,7 @@ body {
     border-radius: 30px;
     text-decoration: none;
     font-family: 'Life Savers', serif;
-    color: white;
+    color: #fff;
   }
   
 .button--primary {
@@ -63,77 +63,169 @@ body {
 
 /* Header */ 
 .header {
+
+    color: #fff;
     display: flex;
-    font-family: 'Life Savers', serif;
-    font-size: 2rem;
     justify-content: space-between;
-    color: #fff;
-    padding-top: 20px;
+    padding: 20px;
 }
 
-
-.header__img {
-    transform: rotate(-180deg);
-    margin-top: -244px;
+.logo {
+    margin-top: -22px;
+    margin-left: -8vmin;
+    width: 35vw;
+    min-width: 200px;
+    max-width: 400px;
 }
 
-.header__menu-toggle {
-    display: none; /* Skrytá na desktopu */
-    cursor: pointer;
+.mobile-nav {
+    position: relative;
 }
 
-.header__menu-icon {
-    align-self: flex-end;
+.mobile-nav__icon {
+    align-self: first baseline;
+    width: 40px;
+    z-index: 2000;
 }
 
-.header__menu-list {
-    display: flex;
+.mobile-nav__icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3000;
+    opacity: 0;
+    width: 0;
 }
 
-.header__menu-item {
-    margin-right: 20px;
+.mobile-nav__checkbox {
+    display: none;
 }
 
-.header__menu-a {
-    text-decoration: none;
-    color: #fff;
+.mobile-nav__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #60B7C2;
+    background-size: 100%;
+    z-index: 2000;
+    opacity: 0;
+    width: 0;
+}
+
+.mobile-nav__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.mobile-nav__item {
     padding: 1rem;
 }
 
-.header__menu-a:hover {
-    color: rgb(217, 72, 72);
+.mobile-nav__link {
+    color: #fff;
+    font-family: 'Life Savers', serif;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav__link:hover, .mobile-nav__link:active {
     transform: scale(1.1);
+    color: rgb(205, 42, 42);
 }
 
-.header__menu-a:active {
-    color: rgb(217, 72, 72);
+.mobile-nav__checkbox:checked ~ .mobile-nav__nav {
+    opacity: 1;
+    width: 100%;
 }
 
-/* Media queries pro mobilní zařízení */
+.mobile-nav__checkbox:checked ~ .mobile-nav__icon-close {
+    opacity: 1;
+    width: 100%;
+}
 
-@media (max-width: 768px) {
-    .header__menu-list {
-        display: none; /* Skryté na mobilu */
-    }
-
-    .header__menu-toggle {
-        display: block; /* Zobrazená ikona na mobilu */
-    }
-
-    .header__menu.active .header__menu-list {
-        display: block; /* Zobrazené menu na mobilu po kliknutí na ikonu */
+@media screen and (min-width: 850px) {
+    .mobile-nav {
+      display: none;
     }
 }
+  
+.navigation {
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .navigation {
+      display: block;
+    }
+}
+
+.navigation__list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+  .navigation__item {
+    margin: 0 20px;
+}
+
+.navigation__link {
+    color: #fff;
+    font-family: 'Life Savers', serif;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.navigation__link:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    color: rgb(205, 42, 42);
+}
+
 
 /* Main */
 
 .about__content {
     padding: 20px;
     text-align: center;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .about__text {
     margin: 40px 0;
+    line-height: 2;
+}
+
+.about__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (min-width: 750px) {
+    .about__flex {
+      flex-direction: row;
+      margin-top: 60px;
+    }
+
+    .about__img {
+        width: 30vw;
+        min-width: 150px;
+        max-width: 300px;
+    }
 }
 
 /* Footer */
