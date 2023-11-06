@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
+
+*, ::before, ::after{ box-sizing: border-box;}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Life Savers', serif;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+    background-color: #60B7C2;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.heading--primary {
+    margin-top: 1rem;
+    font-family: 'Life Savers', serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 700;
+  }
+
+/* Buttony */
+
+.button {
+    display: inline-block;
+    padding: clamp(0.9rem, 3vw, 1.6rem) clamp(1.4rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Life Savers', serif;
+    color: white;
+  }
+  
+.button--primary {
+    background-color: #675555;
+}
+  
+.button--primary:hover {
+    animation: zmena-primary 1.2s;
+    animation-fill-mode: both;
+}
+  
+.button--secondary {
+    background-color: #fff;
+    color: #675555;
+}
+  
+.button--secondary:hover {
+    animation: zmena-secondary 1.2s;
+    animation-fill-mode: both;
+}
+  
+
+/* Header */ 
+.header {
+    display: flex;
+    font-family: 'Life Savers', serif;
+    font-size: 2rem;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+.header__img {
+    transform: rotate(-180deg);
+    margin-top: -244px;
+}
+
+.header__menu-toggle {
+    display: none; /* Skrytá na desktopu */
+    cursor: pointer;
+}
+
+.header__menu-icon {
+    align-self: flex-end;
+}
+
+.header__menu-list {
+    display: flex;
+}
+
+.header__menu-item {
+    margin-right: 20px;
+}
+
+.header__menu-a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header__menu-a:hover {
+    color: rgb(217, 72, 72);
+    transform: scale(1.1);
+}
+
+.header__menu-a:active {
+    color: rgb(217, 72, 72);
+}
+
+/* Media queries pro mobilní zařízení */
+
+@media (max-width: 768px) {
+    .header__menu-list {
+        display: none; /* Skryté na mobilu */
+    }
+
+    .header__menu-toggle {
+        display: block; /* Zobrazená ikona na mobilu */
+    }
+
+    .header__menu.active .header__menu-list {
+        display: block; /* Zobrazené menu na mobilu po kliknutí na ikonu */
+    }
+}
+
+/* Main */
+
+.about__content {
+    padding: 20px;
+    text-align: center;
+}
+
+.about__text {
+    margin: 40px 0;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animace */
+
+@keyframes zmena-primary {
+    0% {
+      background-color: #8BC343;
+      transform: scale(1.0);
+    }
+    80% {
+      background-color: red;
+      transform: scale(1.05);
+    }
+  
+    100% {
+      background-color: red;
+      transform: scale(1.05);
+    }
+  }
+  
+  @keyframes zmena-secondary {
+    0% {
+      background-color: #fff;
+      color: #8C8C8C;
+      transform: scale(1.0);
+    }
+    80% {
+      background-color: #508e24;
+      color: white;
+      transform: scale(1.05);
+    }
+  
+    100% {
+      background-color: #508e24;
+      color: white;
+      transform: scale(1.05);
+    }
+  }
