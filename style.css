@@ -3,23 +3,29 @@
 
 *, ::before, ::after{ box-sizing: border-box;}
 
-body, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-h1, h2, h3 {
-    font-family: 'Life Savers', serif;
-}
-
 body {
     font-family: 'Karla', sans-serif;
     color: #fff;
     background-color: #60B7C2;
     margin: 0 auto;
-    overflow: hidden;
     max-width: 1400px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Life Savers', serif;
 }
 
 .heading--primary {
