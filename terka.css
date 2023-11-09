@@ -1,0 +1,42 @@
+.terka__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.terka__fig {
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+
+.terka__img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 60vw;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.terka__content {
+    flex: 2;
+}
+
+.terka__title {
+    text-align: center;
+}
+
+.terka__text {
+    line-height: 2;
+}
+
+@media screen and (min-width: 800px) {
+    .terka__flex {
+      flex-direction: row;
+      margin-top: 60px;
+    }
+
+    .terka__title {
+        text-align: start;
+    }
+}

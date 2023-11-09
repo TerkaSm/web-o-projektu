@@ -6,7 +6,8 @@
 body {
     font-family: 'Karla', sans-serif;
     color: #fff;
-    background-color: #60B7C2;
+    /*background-color: #60B7C2;*/
+    background-color: #47929c;
     margin: 0 auto;
     max-width: 1400px;
 }
@@ -117,7 +118,7 @@ h1, h2, h3 {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #60B7C2;
+    background-color: #47929c;
     background-size: 100%;
     z-index: 2000;
     opacity: 0;
@@ -149,7 +150,7 @@ h1, h2, h3 {
 
 .mobile-nav__link:hover, .mobile-nav__link:active {
     transform: scale(1.1);
-    color: rgb(205, 42, 42);
+    color: #675555;
 }
 
 .mobile-nav__checkbox:checked ~ .mobile-nav__nav {
@@ -201,7 +202,7 @@ h1, h2, h3 {
 .navigation__link:hover {
     transform: scale(1.1);
     text-decoration: none;
-    color: rgb(205, 42, 42);
+    color: #675555;
 }
 
 
