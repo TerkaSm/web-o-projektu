@@ -241,6 +241,10 @@ h1, h2, h3 {
       justify-content: center;
       margin-top: 60px;
     }
+
+    .about__text {
+        margin-bottom: 80px;
+    }
 }
 
 /* Footer */
