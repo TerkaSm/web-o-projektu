@@ -84,6 +84,12 @@ h3 {
 .button__wrapp {
     text-align: end;
 }
+
+@media screen and (min-width: 850px) {
+    .button__wrapp {
+        padding-top: 80px;
+    }
+}
   
 
 

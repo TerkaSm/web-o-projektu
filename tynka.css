@@ -18,6 +18,10 @@
   max-width: 200px;
 }
 
+.tyna__img-animal {
+  max-width: 100%;
+}
+
 .tyna__content {
   flex: 2;
 }
