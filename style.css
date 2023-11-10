@@ -170,7 +170,7 @@ h3 {
 
 .mobile-nav__link:hover,
 .mobile-nav__link:active {
-    transform: scale(1.1);
+    transform: scale(1.3);
     color: #675555;
 }
 
@@ -221,7 +221,8 @@ h3 {
     padding: 10px;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:active {
     transform: scale(1.3);
     text-decoration: none;
 }
