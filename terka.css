@@ -18,8 +18,13 @@
     max-width: 200px;
 }
 
+.terka__img-animal {
+    max-width: 100%;
+}
+
 .terka__content {
     flex: 2;
+    align-self: center;
 }
 
 .terka__title {
