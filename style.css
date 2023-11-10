@@ -57,23 +57,29 @@ h3 {
 
 .button--primary {
     background-color: #675555;
+    transform: scale(1);
+    transition: background-color .25s, transform .25s;
 }
 
 .button--primary:hover {
-    animation: zmena-primary 1.2s;
-    animation-fill-mode: both;
+    background-color: #8BC343;
+    color: #675555;
+    transform: scale(1.05);
+
 }
 
 .button--secondary {
     font-size: clamp(1.2rem, 3vw, 2rem);
     padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+    transform: scale(1);
     background-color: #fff;
+    transition: background-color .25s, transform .25s;
     color: #675555;
 }
 
 .button--secondary:hover {
-    animation: zmena-secondary 1.2s;
-    animation-fill-mode: both;
+    background-color: #8BC343;
+    transform: scale(1.05);
 }
 
 .button__wrapp {
@@ -154,6 +160,7 @@ h3 {
 }
 
 .mobile-nav__link {
+    display: inline-block;
     color: #fff;
     font-family: 'Life Savers', serif;
     font-size: 2rem;
@@ -207,6 +214,7 @@ h3 {
 }
 
 .navigation__link {
+    display: inline-block;
     color: #fff;
     font-family: 'Life Savers', serif;
     font-size: 2rem;
