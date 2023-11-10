@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
 
-*, ::before, ::after{ box-sizing: border-box;}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Karla', sans-serif;
@@ -18,14 +22,17 @@ main {
     padding: 20px;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Life Savers', serif;
 }
 
@@ -34,41 +41,42 @@ h1, h2, h3 {
     font-family: 'Life Savers', serif;
     font-size: clamp(3rem, 7vw, 5rem);
     font-weight: 700;
-  }
+}
 
 /* Buttony */
 
 .button {
     display: inline-block;
     padding: clamp(0.9rem, 3vw, 1.6rem) clamp(1.4rem, 5vw, 3rem);
-    font-size: clamp(1.5rem, 5vw, 2.5rem);;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    ;
     border-radius: 30px;
     text-decoration: none;
     font-family: 'Life Savers', serif;
     color: #fff;
-  }
-  
+}
+
 .button--primary {
     background-color: #675555;
 }
-  
+
 .button--primary:hover {
     animation: zmena-primary 1.2s;
     animation-fill-mode: both;
 }
-  
+
 .button--secondary {
     background-color: #fff;
     color: #675555;
 }
-  
+
 .button--secondary:hover {
     animation: zmena-secondary 1.2s;
     animation-fill-mode: both;
 }
-  
 
-/* Header */ 
+
+/* Header */
 .header {
 
     color: #fff;
@@ -148,34 +156,35 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.mobile-nav__link:hover, .mobile-nav__link:active {
+.mobile-nav__link:hover,
+.mobile-nav__link:active {
     transform: scale(1.1);
     color: #675555;
 }
 
-.mobile-nav__checkbox:checked ~ .mobile-nav__nav {
+.mobile-nav__checkbox:checked~.mobile-nav__nav {
     opacity: 1;
     width: 100%;
 }
 
-.mobile-nav__checkbox:checked ~ .mobile-nav__icon-close {
+.mobile-nav__checkbox:checked~.mobile-nav__icon-close {
     opacity: 1;
     width: 100%;
 }
 
 @media screen and (min-width: 850px) {
     .mobile-nav {
-      display: none;
+        display: none;
     }
 }
-  
+
 .navigation {
     display: none;
 }
 
 @media screen and (min-width: 850px) {
     .navigation {
-      display: block;
+        display: block;
     }
 }
 
@@ -187,7 +196,7 @@ h1, h2, h3 {
     padding: 0;
 }
 
-  .navigation__item {
+.navigation__item {
     margin: 0 20px;
 }
 
@@ -237,9 +246,9 @@ h1, h2, h3 {
 
 @media screen and (min-width: 900px) {
     .about__flex {
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 60px;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 60px;
     }
 
     .about__text {
@@ -257,35 +266,37 @@ h1, h2, h3 {
 
 @keyframes zmena-primary {
     0% {
-      background-color: #675555;
-      transform: scale(1.0);
+        background-color: #675555;
+        transform: scale(1.0);
     }
+
     80% {
-      background-color: #8BC343;
-      transform: scale(1.05);
+        background-color: #8BC343;
+        transform: scale(1.05);
     }
-  
+
     100% {
-      background-color: #8BC343;
-      transform: scale(1.05);
+        background-color: #8BC343;
+        transform: scale(1.05);
     }
-  }
-  
-  @keyframes zmena-secondary {
+}
+
+@keyframes zmena-secondary {
     0% {
-      background-color: #fff;
-      color: #8C8C8C;
-      transform: scale(1.0);
+        background-color: #fff;
+        color: #8C8C8C;
+        transform: scale(1.0);
     }
+
     80% {
-      background-color: #508e24;
-      color: white;
-      transform: scale(1.05);
+        background-color: #508e24;
+        color: white;
+        transform: scale(1.05);
     }
-  
+
     100% {
-      background-color: #508e24;
-      color: white;
-      transform: scale(1.05);
+        background-color: #508e24;
+        color: white;
+        transform: scale(1.05);
     }
-  }
+}
