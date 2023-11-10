@@ -1,71 +1,112 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <title>Web o projektu</title>
-    <link rel="stylesheet" href="style.css">
-    <Script src="script.js"></Script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
     <!--Header-->
 
     <header class="header">
-        <a href="index.html"><img class="logo" src="img/logo_panda.svg" alt="logo"></a>
+      <a href="index.html"
+        ><img class="logo" src="img/logo_panda.svg" alt="logo"
+      /></a>
 
-        <!--Mobile-nav-->
+      <!--Mobile-nav-->
 
-        <div class="mobile-nav">
-            <input class="mobile-nav__checkbox" type="checkbox" id="mobile-nav-toggle">
-            <label class="mobile-nav__button" for="mobile-nav-toggle"><img class="mobile-nav__icon" src="img/icon-nav.svg"navigace></label>
+      <div class="mobile-nav">
+        <input
+          class="mobile-nav__checkbox"
+          type="checkbox"
+          id="mobile-nav-toggle"
+        />
+        <label class="mobile-nav__button" for="mobile-nav-toggle"
+          ><img class="mobile-nav__icon" src="img/icon-nav.svg" navigace
+        /></label>
 
-            <a class="mobile-nav__icon-close" href="index.html"><img src="img/icon-close.svg" alt="ikona zavřít"></a>
+        <a class="mobile-nav__icon-close" href="index.html"
+          ><img src="img/icon-close.svg" alt="ikona zavřít"
+        /></a>
 
-            <nav class="mobile-nav__nav">
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="index.html">Domů</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="hedvika.html">Hedvika</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="tynka.html">Týnka</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="terka.html">Terka</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!--Navigation-->
-
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="hedvika.html">Hedvika</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="tynka.html">Týnka</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="terka.html">Terka</a></li>
-            </ul>
+        <nav class="mobile-nav__nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="index.html">Domů</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="hedvika.html">Hedvika</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="tynka.html">Týnka</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="terka.html">Terka</a>
+            </li>
+          </ul>
         </nav>
+      </div>
+
+      <!--Navigation-->
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="hedvika.html">Hedvika</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="tynka.html">Týnka</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="terka.html">Terka</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main-->
 
     <main>
-        <section class="about__content">
-            <h1 class="heading--primary">O našem projektu</h1>
-            <p class="about__text">Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektuText o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu Text o projektu</p>
-            <a class="button button--primary" href="#">Zahrát si hru</a>
+      <section class="about__content">
+        <h1 class="heading--primary">O našem projektu</h1>
+        <p class="about__text">
+          Projekt je o tom, jak naučit malé děti zvládat své emoce. Hra je
+          zaměřena na děti od 2- 5 let a nastoluje běžné emocionálně vypjaté
+          situace. Vybraly jsme tři situace a pro každou situaci jedno zvířátko,
+          kterému dítě pomůže danou situaci zvládnout. Hlavní věc je, že se dítě
+          musí zastavit třikrát se zhluboka nadechnout vydechnout, zamyslet se,
+          jak danou situaci vyřešit, vybrat si jedno řešení a to udělat. Díky
+          zvířátku a obrázkům, které si dítě ve hře vybírá se učí jak se
+          vypořádat s danou situací. Inspirovaly jsme se v anglické hře Sesame
+          Street, která toto téma řeší více propracovaně.
+        </p>
+        <a class="button button--primary" href="#">Zahrát si hru</a>
 
-            <div class="about__flex">
-                <a href="tynka.html"><img class="about__img" src="img/kocka.svg" alt="kočka"></a>
-                <a href="hedvika.html"><img class="about__img" src="img/panda.svg" alt="panda"></a>
-                <a href="terka.html"><img class="about__img" src="img/tygr.svg" alt="tygr"></a>
-            </div>
-        </section>
+        <div class="about__flex">
+          <a href="tynka.html"
+            ><img class="about__img" src="img/kocka.svg" alt="kočka"
+          /></a>
+          <a href="hedvika.html"
+            ><img class="about__img" src="img/panda.svg" alt="panda"
+          /></a>
+          <a href="terka.html"
+            ><img class="about__img" src="img/tygr.svg" alt="tygr"
+          /></a>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
 
     <footer class="footer">
-        <p>2023 Hedvika Reichlová, Tereza Smolová, Kristýna Jozífová - Czechitas, Digitální akademie: Web</p>
+      <p>
+        Hedvika Reichlová, Tereza Smolová, Kristýna Jozífová - Czechitas,
+        Digitální akademie 2023: Web
+      </p>
     </footer>
-    
-</body>
-</html> 
+  </body>
+</html>

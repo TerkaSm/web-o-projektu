@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web o projektu - Týnka</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tynka.css">
-    <Script src="script.js"></Script>
-</head>
-<body>
-
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tynka.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
     <!--Header-->
 
     <header class="header">
-        <a href="index.html"><img class="logo" src="img/logo_panda.svg" alt="logo"></a>
+      <a href="index.html"
+        ><img class="logo" src="img/logo_panda.svg" alt="logo"
+      /></a>
 
-        <!--Mobile-nav-->
+      <!--Mobile-nav-->
 
-        <div class="mobile-nav">
-            <input class="mobile-nav__checkbox" type="checkbox" id="mobile-nav-toggle">
-            <label class="mobile-nav__button" for="mobile-nav-toggle"><img class="mobile-nav__icon" src="img/icon-nav.svg"navigace></label>
+      <div class="mobile-nav">
+        <input
+          class="mobile-nav__checkbox"
+          type="checkbox"
+          id="mobile-nav-toggle"
+        />
+        <label class="mobile-nav__button" for="mobile-nav-toggle"
+          ><img class="mobile-nav__icon" src="img/icon-nav.svg" navigace
+        /></label>
 
-            <a class="mobile-nav__icon-close" href="index.html"><img src="img/icon-close.svg" alt="ikona zavřít"></a>
+        <a class="mobile-nav__icon-close" href="index.html"
+          ><img src="img/icon-close.svg" alt="ikona zavřít"
+        /></a>
 
-            <nav class="mobile-nav__nav">
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="index.html">Domů</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="hedvika.html">Hedvika</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="tynka.html">Týnka</a></li>
-                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="terka.html">Terka</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!--Navigation-->
-
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="hedvika.html">Hedvika</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="tynka.html">Týnka</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="terka.html">Terka</a></li>
-            </ul>
+        <nav class="mobile-nav__nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="index.html">Domů</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="hedvika.html">Hedvika</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="tynka.html">Týnka</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="terka.html">Terka</a>
+            </li>
+          </ul>
         </nav>
+      </div>
+
+      <!--Navigation-->
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="hedvika.html">Hedvika</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="tynka.html">Týnka</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="terka.html">Terka</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main-->
 
     <main>
-        Týnka obsah
+      <div class="tyna__flex">
+        <figcaption class="tyna__fig">
+          <img class="tyna__img" src="img/photo_Tyna.jpg" alt="Kristýna" />
+        </figcaption>
+        <div class="tyna__content">
+          <h1 class="tyna__title">Kristýna Jozífová</h1>
+          <p class="tyna__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea vitae
+            sit, quibusdam beatae asperiores est laborum rerum nesciunt ad
+            dolore, deleniti tempore cumque aut ducimus veritatis commodi vero
+            harum incidunt distinctio reprehenderit possimus id inventore?
+            Soluta ullam optio, sequi magnam quod alias eligendi facilis animi,
+            quasi dignissimos et, consectetur distinctio!
+          </p>
+        </div>
+      </div>
     </main>
 
     <!--Footer-->
 
     <footer class="footer">
-        <p>2023 Hedvika Reichlová, Tereza Smolová, Kristýna Jozífová - Czechitas, Digitální akademie: Web</p>
+      <p>
+        Hedvika Reichlová, Tereza Smolová, Kristýna Jozífová - Czechitas 2023,
+        Digitální akademie: Web
+      </p>
     </footer>
-    
-</body>
-</html> 
+  </body>
+</html>
