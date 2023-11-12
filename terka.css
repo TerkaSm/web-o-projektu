@@ -31,6 +31,18 @@
     text-align: center;
 }
 
+.terka__github-link {
+display: inline-block;
+}
+
+.terka__github-link:hover {
+    transform: scale(1.3);
+    }
+
+.terka__github-icon {
+    display: block;
+}
+
 .terka__text {
     line-height: 2;
 }
