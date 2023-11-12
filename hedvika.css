@@ -1,0 +1,47 @@
+.hedvika__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hedvika__fig {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+.hedvika__img {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  width: 60vw;
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.hedvika__img-animal {
+  max-width: 100%;
+}
+
+.hedvika__content {
+  flex: 2;
+  align-self: center;
+}
+
+.hedvika__title {
+  text-align: center;
+}
+
+.hedvika__text {
+  line-height: 2;
+}
+
+@media screen and (min-width: 800px) {
+  .hedvika__flex {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .hedvika__title {
+      text-align: start;
+  }
+}
