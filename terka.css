@@ -33,6 +33,7 @@
 
 .terka__github-link {
 display: inline-block;
+padding-left: 30px;
 }
 
 .terka__github-link:hover {

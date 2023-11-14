@@ -114,6 +114,8 @@ h3 {
     transform: scale(1.1);
 }
 
+/* Navigation - Mobile */
+
 .mobile-nav {
     position: relative;
 }
@@ -195,6 +197,8 @@ h3 {
         display: none;
     }
 }
+
+/* Navigation - Desktop */
 
 .navigation {
     display: none;
